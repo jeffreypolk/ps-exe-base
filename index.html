@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="stylesheets/my.css">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,9 +42,9 @@
                 </h3>
                 <p>
                     The start up routine assumes there are two ways of envoking your executable - normally (shows a UI) and 
-                    through the command line (no UI).  Your project should use the "Sub Main" Startup option.  In "Sub Main" you
-                    should invoke the <i>PS.ExeBase.Starter.Start</i> method passing a class defined in your project which 
-                    implements the <i>IManager</i> class.
+                    through the command line with arguments (no UI).  Your project needs to use the <span class="code">Sub Main</span> Startup option.  
+                    In <span class="code">Sub Main</span> you should invoke the <span class="code">PS.ExeBase.Starter.Start</span> method passing an instance 
+                    of a class defined in your project which implements the <span class="code">IManager</span> class.
                 </p>
                 <p>
                     Define a Manager class in your project to handle the startup operations

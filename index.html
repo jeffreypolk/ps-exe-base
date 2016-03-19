@@ -37,11 +37,12 @@
                     arguments or loading of the startup form.  It includes classes to manage external processes, setting fonts
                     on forms and all controls and handling updates to UI threads from background worker processes.
                 </p>
+
                 <h3>
                     <a id="Startup" class="anchor" href="#Startup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Start Up
                 </h3>
                 <p>
-                    The start up routine assumes there are two ways of envoking your executable - normally (shows a UI) and 
+                    The start up routine assumes there are two ways of invoking your executable - normally (shows a UI) and 
                     through the command line with arguments (no UI).  Your project needs to use the <span class="code">Sub Main</span> Startup option.  
                     In <span class="code">Sub Main</span> you should invoke the <span class="code">PS.ExeBase.Starter.Start</span> method passing an instance 
                     of a class defined in your project which implements the <span class="code">IManager</span> class.

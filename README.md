@@ -1,2 +1,5 @@
 # ps-exe-base
-Helper utility and base classes used in other projects
+Base library for Windows Forms projects
+
+####Documentation
+http://jeffreypolk.github.io/ps-exe-base

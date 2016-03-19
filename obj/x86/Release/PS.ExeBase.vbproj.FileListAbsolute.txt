@@ -1,0 +1,9 @@
+C:\Data\Development\PS.ExeBase\bin\PS.ExeBase.dll
+C:\Data\Development\PS.ExeBase\bin\PS.ExeBase.pdb
+C:\Data\Development\PS.ExeBase\bin\PS.ExeBase.xml
+C:\Data\Development\PS.ExeBase\obj\x86\Release\PS.ExeBase.vbprojResolveAssemblyReference.cache
+C:\Data\Development\PS.ExeBase\obj\x86\Release\PS.ExeBase.Resources.resources
+C:\Data\Development\PS.ExeBase\obj\x86\Release\PS.ExeBase.vbproj.GenerateResource.Cache
+C:\Data\Development\PS.ExeBase\obj\x86\Release\PS.ExeBase.dll
+C:\Data\Development\PS.ExeBase\obj\x86\Release\PS.ExeBase.xml
+C:\Data\Development\PS.ExeBase\obj\x86\Release\PS.ExeBase.pdb

@@ -1,0 +1,10 @@
+C:\Development\Misc\WindowsExeTemplate\WindowsExeTemplate\bin\WindowsExeTemplate.exe
+C:\Development\Misc\WindowsExeTemplate\WindowsExeTemplate\bin\WindowsExeTemplate.pdb
+C:\Development\Misc\WindowsExeTemplate\WindowsExeTemplate\bin\WindowsExeTemplate.xml
+C:\Development\Misc\WindowsExeTemplate\WindowsExeTemplate\obj\x86\Debug\WindowsExeTemplate.Resources.resources
+C:\Development\Misc\WindowsExeTemplate\WindowsExeTemplate\obj\x86\Debug\WindowsExeTemplate.exe
+C:\Development\Misc\WindowsExeTemplate\WindowsExeTemplate\obj\x86\Debug\WindowsExeTemplate.xml
+C:\Development\Misc\WindowsExeTemplate\WindowsExeTemplate\obj\x86\Debug\WindowsExeTemplate.pdb
+C:\Development\Misc\WindowsExeTemplate\WindowsExeTemplate\obj\x86\Debug\WindowsExeTemplate.MainForm.resources
+C:\Development\Misc\WindowsExeTemplate\WindowsExeTemplate\bin\WindowsExeTemplate.exe.config
+C:\Development\Misc\WindowsExeTemplate\WindowsExeTemplate\obj\x86\Debug\WindowsExeTemplate.vbproj.GenerateResource.Cache

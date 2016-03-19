@@ -42,9 +42,15 @@
                 <p>
                     The start up routine assumes there are two ways of envoking your executable - normally (shows a UI) and 
                     through the command line (no UI).  Your project should use the "Sub Main" Startup option.  In "Sub Main" you
-                    should invoke the _PS.ExeBase.Starter.Start_ method passing a class defined in your project which implements _IManager_.
+                    should invoke the <i>PS.ExeBase.Starter.Start</i> method passing a class defined in your project which 
+                    implements the <i>IManager</i> class.
                 </p>
                 <p>
+                    Example Manager class
+                    <script src="https://gist.github.com/jeffreypolk/705d4f15ccfe3ecf9651.js"></script>
+                </p>
+                <p>
+                    Example "Sub Main"
                     <script src="https://gist.github.com/jeffreypolk/8c912f927ed64fb027b8.js"></script>
                 </p>
             </section>

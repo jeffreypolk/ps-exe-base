@@ -29,46 +29,100 @@
     <div id="content-wrapper">
         <div class="inner clearfix">
             <section id="main-content">
-                <h3>
-                    <a id="Overview" class="anchor" href="#Overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-                    Overview
-                </h3>
-                <p>
-                    This project is a base library for Windows Forms projects.  It is used to start your exe and handles
-                    arguments or loading of the startup form.  It includes classes to manage external processes, setting fonts
-                    on forms and all controls and handling updates to UI threads from background worker processes.
-                </p>
+                <!-- Overview -->
+                <div>
+                    <h3>
+                        <a id="Overview" class="anchor" href="#Overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+                        Overview
+                    </h3>
+                    <p>
+                        This project is a base library for Windows Forms projects.  It is used to start your exe and handles
+                        arguments or loading of the startup form.  It includes classes to manage external processes, setting fonts
+                        on forms and all controls and handling updates to UI threads from background worker processes.
+                    </p>
+                </div>
 
-                <h3>
-                    <a id="Startup" class="anchor" href="#Startup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-                    Start Up
-                </h3>
-                <p>
-                    The start up routine assumes there are two ways of invoking your executable - normally (shows a UI) and 
-                    through the command line with arguments (no UI).  Your project needs to use the <span class="code">Sub Main</span> Startup option.  
-                    In <span class="code">Sub Main</span> you should invoke the <span class="code">PS.ExeBase.Starter.Start</span> method passing an instance 
-                    of a class defined in your project which implements the <span class="code">IManager</span> class.
-                </p>
-                <p>
-                    Define a Manager class in your project to handle the startup operations
-                    <script src="https://gist.github.com/jeffreypolk/705d4f15ccfe3ecf9651.js"></script>
-                </p>
-                <p>
-                    Define a "Sub Main" method to be invoked on start up and pass the Manager to PS.ExeBase
-                    <script src="https://gist.github.com/jeffreypolk/8c912f927ed64fb027b8.js"></script>
-                </p>
+                <!-- Start Up -->
+                <div>
+                    <h3>
+                        <a id="Startup" class="anchor" href="#Startup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+                        Start Up
+                    </h3>
+                    <p>
+                        The start up routine assumes there are two ways of invoking your executable - normally (shows a UI) and
+                        through the command line with arguments (no UI).  Your project needs to use the <span class="code">Sub Main</span> Startup option.
+                        In <span class="code">Sub Main</span> you should invoke the <span class="code">PS.ExeBase.Starter.Start</span> method passing an instance
+                        of a class defined in your project which implements the <span class="code">IManager</span> class.
+                    </p>
+                    <p>
+                        Define a Manager class in your project to handle the startup operations
+                        <script src="https://gist.github.com/jeffreypolk/705d4f15ccfe3ecf9651.js"></script>
+                    </p>
+                    <p>
+                        Define a "Sub Main" method to be invoked on start up and pass the Manager to PS.ExeBase
+                        <script src="https://gist.github.com/jeffreypolk/8c912f927ed64fb027b8.js"></script>
+                    </p>
+                </div>
 
-                <h3>
-                    <a id="Util" class="anchor" href="#Util" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-                    Util
-                </h3>
-                <p>
-                    This project is a base library for Windows Forms projects.  It is used to start your exe and handles
-                    arguments or loading of the startup form.  It includes classes to manage external processes, setting fonts
-                    on forms and all controls and handling updates to UI threads from background worker processes.
-                </p>
+                <!-- Util -->
+                <div>
+                    <h3>
+                        <a id="Util" class="anchor" href="#Util" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+                        Util
+                    </h3>
+                    <p>
+                        This class includes helper methods for common tasks in your project
+                    </p>
+
+                    <!-- Setting Fonts -->
+                    <h4>Setting Fonts</h4>
+                    <p>
+                        Out of the box, Forms use the Microsoft Sans Serif font, which was fine for 1998, but it downright ugly
+                        nowadays.  Use the <span class="code">InitializeFonts</span> method in the Load event to set font on the
+                        form and all controls on the form.  This uses the <span class="code">SystemFonts.MessageBoxFont</span> font,
+                        which uses the base font for the OS on which the executable is running.
+                    </p>
+                    <script src="https://gist.github.com/jeffreypolk/a62bf1b3b77b042cba4c.js"></script>
+
+                    <!-- Message Boxes -->
+                    <h4>Message Boxes</h4>
+                    <p>
+                        I grew tired of typing the same code every time I wanted to show a message box.  These helper methods
+                        save time by including the proper icons, buttons, etc.
+                    </p>
+                    <script src="https://gist.github.com/jeffreypolk/26324e0d752a5d33bde5.js"></script>
+                </div>
+
+                <!-- Output Writer -->
+                <div>
+                    <h3>
+                        <a id="OutputWriter" class="anchor" href="#OutputWriter" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+                        Output Writer
+                    </h3>
+                    <p>
+                        This is a collection of classes to redirect output to a place of your choosing.
+                        This is handy when you have a background worker thread and you want to send output to the UI.
+                        It is a violation to access the UI thread from a background thread.  Therefore, something as simple as
+                        updating a textbox from a background thread requires delegates, etc.  This complexity is abstracted away
+                        through these classes.
+                    </p>
+                    <script src="https://gist.github.com/jeffreypolk/03422f7ec3bf034b031c.js"></script>
+                </div>
+
+                <!-- ProcessRunner -->
+                <div>
+                    <h3>
+                        <a id="ProcessRunner" class="anchor" href="#ProcessRunner" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+                        ProcessRunner
+                    </h3>
+                    <p>
+                        This class makes it easy to initiate external processes.  It wraps the <span class="code">System.Diagnostics.Process</span> class.
+                        The StandardOutput and StandardError streams are redirected to single location for easy access.
+                        It also accepts an <span class="code">Output.IOutputWriter</span> to present the output to the UI thread.
+                    </p>
+                </div>
+                
             </section>
-
             <aside id="sidebar">
                 <a href="https://github.com/jeffreypolk/ps-exe-base/zipball/master" class="button">
                     <small>Download</small>

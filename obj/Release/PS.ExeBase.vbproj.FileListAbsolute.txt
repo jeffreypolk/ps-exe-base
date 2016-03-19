@@ -1,8 +1,0 @@
-C:\Data\Development\PS.ExeBase\bin\Release\PS.ExeBase.dll
-C:\Data\Development\PS.ExeBase\bin\Release\PS.ExeBase.pdb
-C:\Data\Development\PS.ExeBase\bin\Release\PS.ExeBase.xml
-C:\Data\Development\PS.ExeBase\obj\Release\PS.ExeBase.Resources.resources
-C:\Data\Development\PS.ExeBase\obj\Release\PS.ExeBase.vbproj.GenerateResource.Cache
-C:\Data\Development\PS.ExeBase\obj\Release\PS.ExeBase.dll
-C:\Data\Development\PS.ExeBase\obj\Release\PS.ExeBase.xml
-C:\Data\Development\PS.ExeBase\obj\Release\PS.ExeBase.pdb

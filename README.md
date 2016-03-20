@@ -1,5 +1,5 @@
 # ps-exe-base
-Base library for Windows Forms projects
+Library for Windows Form projects
 
 ####Documentation
 http://jeffreypolk.github.io/ps-exe-base

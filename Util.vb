@@ -12,7 +12,10 @@
     End Sub
 
     Private Shared Sub ChangeFont(ByVal c As Control)
-        c.Font = SystemFonts.MessageBoxFont
+         'maintain configured size
+        Dim Size As Single = c.Font.Size
+        'set font
+        c.Font = New Font(SystemFonts.MessageBoxFont.Name, Size)
         For Each c2 As Control In c.Controls
             ChangeFont(c2)
         Next
